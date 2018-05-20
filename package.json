@@ -1,0 +1,25 @@
+{
+  "name": "e_report",
+  "version": "1.0.0",
+  "description": "A Simple Electronic Emergency Reporting System",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Enoch Marley",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  },
+  "engines":{
+    "node":"6.11.0"
+    },
+  "repository":{
+    "type":"git",
+    "url": "https://github.com/enochMarley/e_report.github.io.git"
+  },
+  "keywords":[
+    "report","electronic report", "e report"
+  ]
+}

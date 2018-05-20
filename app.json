@@ -1,0 +1,7 @@
+{
+	"name": "e_report",
+	"description": "A Simple Electronic Emergency Reporting System",
+	"repository":"https://github.com/enochMarley/e_report.github.io.git",
+	"keywords":["report","electronic report", "e report"],
+	"image":"heroku/nodejs"
+}

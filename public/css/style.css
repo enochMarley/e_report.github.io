@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato/lato-regular-webfont.tff') format('ttf'),
+         url('../fonts/lato/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	box-sizing: border-box;
+	z-index: 1000;
+	font-family: 'latoregular';
+}
