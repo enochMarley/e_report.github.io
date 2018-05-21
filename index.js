@@ -19,5 +19,17 @@ var appSession;
 
 //when the index page is requested
 app.get('/', (req,res) => {
-	res.render('index.ejs',{title:'E-report'});
+	res.render('index.ejs');
+});
+
+app.get('/login', (req,res) => {
+	res.render('admin-login.ejs');
+});
+
+app.get('/signup', (req,res) => {
+	res.render('admin-signup.ejs');
+});
+
+app.get('/dashboard', (req,res) => {
+	res.render('admin-dashboard.ejs');
 });

@@ -1,0 +1,56 @@
+<!Doctype>
+<html>
+
+    <head>
+        <title>E Report</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/admin-styles.css">
+    </head>
+
+    <body>
+        <nav class="blue darken-1">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">E-Report</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/login">logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row main-row">
+            <div class="col m2 side-div">
+                <div class="side-div-title">
+                    <p>REPORTS</p>
+                </div>
+                <div class="side-div-content"></div>
+            </div>
+
+            <div class="col m10 content-div"> 
+                <div class="row">
+                    <div class="col m12">
+                        <div class="map-img-div">
+                            <img src="/images/map-image.jpg" class="map-img">
+                            <p class="map-desc"></p>
+                        </div>
+                        <div id="map" class="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/jquery-2.2.4.min.js"></script>
+        <script src="/js/materialize.min.js"></script>
+        <script src="/js/moment.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8xSibKfiKI1vx3IArYkAk9UlmdQjSJ6w"></script>
+        <script src="/js/firebase-config.js"></script>
+        <script src="/js/dashboard-controller.js"></script>
+    </body>
+
+</html>
