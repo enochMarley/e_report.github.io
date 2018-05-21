@@ -19,5 +19,5 @@ var appSession;
 
 //when the index page is requested
 app.get('/', (req,res) => {
-	res.render('index',{title:'E-report'});
+	res.render('index.ejs',{title:'E-report'});
 });

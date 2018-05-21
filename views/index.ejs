@@ -1,1 +1,84 @@
-<h1>hello world</h1>
+<!Doctype>
+<html>
+
+    <head>
+        <title>E Report</title>
+        <link rel="stylesheet" type="text/css" href="/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+
+    <body>
+        <nav class="blue darken-1">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">E-Report</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                    <a class="modal-trigger" href="#about-modal">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a class="modal-trigger" href="#about-modal">About</a>
+            </li>
+        </ul>
+
+        <div  class="intro-div">
+            <form class="upload-form content-div">
+                <p class="center-align"><b>Please select you photo to upload</b></p><br>
+                <input type="file" id="upload-img" class="upload-img">
+                <label class="waves-effect waves-light blue darken-1 btn-large align-center" for="upload-img"><i class="fa fa-image"></i> Select Photo</label>
+            </form>  
+        </div>
+
+        <div class="preview-div">
+            <img id="preview-img" class="preview-img">
+            <div class="preview-btn-div">
+                <button class="waves-effect waves-light blue darken-1 btn-small align-center" onclick="upload()"><i class="fa fa-upload"></i> Upload</button>
+                <button class="waves-effect waves-light blue darken-1 btn-small align-center" onclick="refresh()" ><i class="fa fa-remove"></i> Cancel</button>
+            </div>
+        </div>
+
+        <div id="modal1" class="modal response-modal">
+            <div class="modal-content">
+                <img src="/images/loading.gif" class="loader-img"> <small>Uploading. Please wait...</small>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="refresh()">OK</a>
+            </div>
+        </div>
+
+        <div id="about-modal" class="modal">
+            <div class="modal-content">
+                <p>E-Reporting Application </p>
+                <small>Version 0.0.1</small>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="refresh()">OK</a>
+            </div>
+        </div>
+
+        <script src="/js/jquery-2.2.4.min.js"></script>
+        <script src="/js/materialize.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+        <script>
+            var config = {
+                apiKey: "AIzaSyD3j7Qne6oLFdbReFv110YwIhs9Z7DppGw",
+                authDomain: "image-upload-554f1.firebaseapp.com",
+                databaseURL: "https://image-upload-554f1.firebaseio.com",
+                projectId: "image-upload-554f1",
+                storageBucket: "image-upload-554f1.appspot.com",
+                messagingSenderId: "712945196528"
+            };
+            firebase.initializeApp(config); 
+        </script>
+        <script src="/js/styles.js"></script>
+    </body>
+
+</html>
