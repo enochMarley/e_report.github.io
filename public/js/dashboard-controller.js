@@ -11,14 +11,15 @@ saveDataRef.on("value", function(snapshot) {
         `;
     });
 
+   
     $(".side-div-content").html(template)
     
 }, function (error) {
     console.log("Error: " + error.code);
 });
 
-function viewOnMap(lon, lat, date, url, comment) {
 
+function viewOnMap(lon, lat, date, url, comment) {
     var myLatLng = {lat: lat, lng: lon};
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
