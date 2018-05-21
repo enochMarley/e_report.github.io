@@ -15,7 +15,11 @@ function upload() {
             dismissible: false
         })
 
-       
+        var uploadComment = $(".upload-comment").val().trim();
+        if((uploadComment == null) || (uploadComment == "")) {
+            uploadComment = "N/A"; 
+        }
+
         var file = uploadPhoto;
         const name = (+new Date()) + '-' + file.name;
        
@@ -27,6 +31,8 @@ function upload() {
                         longitude: longitude,
                         latitude: latitude,
                         photo_url: url,
+                        upload_comment: uploadComment,
+                        upload_seen: false,
                         date_added: Date.now()
                     };
     

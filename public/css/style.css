@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5vh;
+    margin-top: 1vh;
 }
 
 .loader-img {
@@ -35,11 +35,15 @@ body {
 }
 
 .preview-img {
-    height: 70vh;
+    height: 57vh;
     width: 90vw;
     margin-bottom: 10px;
 }
 
 .upload-img {
     visibility: hidden;
+}
+
+.upload-comment {
+    color: #111;
 }
